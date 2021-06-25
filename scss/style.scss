@@ -1,5 +1,4 @@
   @import 'DDS';
-  @import 'media';
   //fonts
   $Montserrat: 'Montserrat',
   sans-serif;
@@ -9,7 +8,8 @@
   cursive;
   // container    
   .container {
-      width: 1230px;
+      width: 100%;
+      max-width: 1230px;
       margin: 0 auto;
       padding-left: 15px;
       padding-right: 15px;
@@ -59,7 +59,9 @@
   
   // header
   .header {
-      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
       z-index: 1000;
       position: absolute;
       &__inner {
@@ -851,12 +853,14 @@
       padding-top: 70px;
       background-color: #f8f8f8;
       &__inner {
+          max-width: 100%;
           display: flex;
+          flex-wrap: wrap;
           justify-content: space-between;
           padding-bottom: 69px;
       }
       &__item-first {
-          width: 40%;
+          max-width: 40%;
       }
       &__title {
           font-family: 'Montserrat', sans-serif;
@@ -936,10 +940,10 @@
       }
       // end item--first
       &__item-second {
-          width: 28%;
+          max-width: 28%;
       }
       &__item-third {
-          width: 268/1200*100%;
+          max-width: 268/1200*100%;
       }
       &__header {
           font-family: $Montserrat;
@@ -1025,13 +1029,4 @@
       color: #f38181;
   }
   
-  // media
-  @media (max-with:1230px) {
-      body {
-          background-color: red;
-      }
-  }
-  
-  .soemthing {
-      color: red;
-  }
+  @import 'media';

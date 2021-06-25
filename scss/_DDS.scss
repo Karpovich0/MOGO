@@ -44,7 +44,7 @@ dd {
 /* Выставляем основные настройки по-умолчанию для body */
 
 body {
-    min-width: fit-content; // to avoid a bug with not full covered width
+    // min-width: fit-content; // to avoid a bug with not full covered width
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     /* line-height: 1.5; */
@@ -72,9 +72,6 @@ img {
     max-width: 100%;
     display: block;
 }
-
-
-/* Указываем понятную периодичность в потоке данных у article*/
 
 
 /* Наследуем шрифты для инпутов и кнопок */
