@@ -7,6 +7,130 @@
             font-size: 120px;
         }
     }
+    // end intro
 }
 
-@media screen and (max-width:992px) {}
+@media screen and (max-width:992px) {
+    .header {
+        &__nav {
+            display: none;
+        }
+    }
+    .intro {
+        &__suptitle {
+            font-size: 32px;
+        }
+        &__title {
+            font-size: 80px;
+        }
+    }
+    // end intro
+    .section {
+        padding: 70px 0;
+    }
+    // end section
+    .title {
+        &__text {
+            margin-bottom: 65px;
+        }
+    }
+    // end title
+    .stats {
+        background-color: transparent;
+        &__inner {
+            justify-content: center;
+        }
+        &__item {
+            background-color: #95e1d3;
+            width: 1/3*100%;
+            padding: 50px 0 60px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            ;
+        }
+    }
+    // end stats
+}
+
+@media screen and (max-width:762px) {
+    .title {
+        &__text {
+            margin-bottom: 45px;
+        }
+    }
+    // end title
+    .card {
+        justify-content: center;
+        &__item {
+            width: 100%;
+            max-width: 380px;
+            margin-bottom: 15px;
+        }
+        &__item:last-child {
+            margin-bottom: 0;
+        }
+    }
+    //end card
+    .stats {
+        &__item {
+            width: 50%;
+            // padding: 50px 0 60px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    }
+    // end stats
+    .services {
+        &__item {
+            width: 50%;
+        }
+        &__item:nth-last-child(3) {
+            border-bottom: 1px solid #e5e5e5;
+        }
+    }
+    //end services
+}
+
+@media screen and (max-width:576px) {
+    .intro {
+        &__suptitle {
+            font-size: 22px;
+        }
+        &__title {
+            font-size: 40px;
+        }
+    }
+    //end intro
+    .title {
+        &__main {
+            font-size: 24px;
+        }
+        &__sup {
+            font-size: 20px;
+        }
+    }
+    // end title
+    .stats {
+        &__item {
+            width: 100%;
+            max-width: 400px;
+            // padding: 50px 0 60px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        &__number {
+            font-size: 52px;
+        }
+        &__title {
+            font-size: 12px;
+        }
+    }
+    // end stats
+    .services {
+        justify-content: center;
+        &__item {
+            width: 100%;
+            max-width: 400px;
+        }
+        &__item:nth-last-child(2) {
+            border-bottom: 1px solid #e5e5e5;
+        }
+    }
+}
