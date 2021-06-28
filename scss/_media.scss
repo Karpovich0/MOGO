@@ -27,6 +27,10 @@
     // end intro
     .section {
         padding: 70px 0;
+        &--devices {
+            padding-bottom: 0;
+        }
+        &--gray {}
     }
     // end section
     .title {
@@ -49,6 +53,37 @@
         }
     }
     // end stats
+    .reviews {
+        padding: 0 90px;
+        &__item {
+            padding-left: 0;
+            padding-top: 0;
+        }
+        &__img {
+            margin: 0 auto;
+            width: 146px;
+            height: auto;
+            position: static;
+            margin-bottom: 25px;
+        }
+        &__text {
+            font-size: 20px;
+        }
+        &__author {
+            font-size: 20px;
+        }
+    }
+    //end reviews
+    .logos {
+        &__item {
+            width: 1/3*100%;
+        }
+        &__img {
+            display: inline-block;
+            max-width: 100%;
+        }
+    }
+    //end logos
 }
 
 @media screen and (max-width:762px) {
@@ -87,6 +122,42 @@
         }
     }
     //end services
+    .devices {
+        max-width: 400px;
+        &__iphone {
+            max-width: 220px;
+            bottom: -65px;
+            right: -90px;
+        }
+    }
+    //end devices
+    .wedo {
+        &__item:first-child {
+            display: none;
+        }
+        &__item {
+            padding: 0 10px;
+            width: 1000%;
+        }
+    }
+    //end wedo
+    .reviews {
+        padding: 0 70px;
+        &__item::before {
+            top: 20%;
+            left: 68px;
+        }
+        &__item::after {
+            top: 20%;
+            right: 68px;
+        }
+    }
+    //end reviews
+    .works {
+        &__item {
+            width: 50%;
+        }
+    }
 }
 
 @media screen and (max-width:576px) {
@@ -133,4 +204,36 @@
             border-bottom: 1px solid #e5e5e5;
         }
     }
+    //end services
+    .devices {
+        max-width: 300px;
+        &__iphone {
+            max-width: 180px;
+            bottom: -65px;
+            right: -90px;
+        }
+    }
+    //end devices
+    .reviews {
+        padding: 0 20px;
+        &__item::before {
+            left: 18px;
+        }
+        &__item::after {
+            right: 18px;
+        }
+        &__text {
+            font-size: 18px;
+        }
+        &__author {
+            font-size: 18px;
+        }
+    }
+    //end reviews
+    .logos {
+        &__item {
+            width: 50%;
+        }
+    }
+    //end logos
 }

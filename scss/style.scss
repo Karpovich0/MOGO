@@ -487,7 +487,7 @@
       margin: 0 auto;
       width: 100%;
       max-width: 736px;
-      padding-left: 100px;
+      padding-left: 100/836*100%;
       position: relative;
       &__iphone {
           position: absolute;
@@ -498,13 +498,12 @@
   
   // wedo
   .wedo {
+      margin: 0 -10px;
       display: flex;
       justify-content: space-between;
       &__item {
+          padding: 0 10px;
           width: 50%;
-      }
-      &__item:last-child {
-          padding-right: 0;
       }
   }
   
@@ -567,7 +566,7 @@
   .reviews {
       padding: 0 110px;
       &__item {
-          height: 210px;
+          height: auto;
           position: relative;
           padding-left: 210px;
           padding-top: 37px;
@@ -610,7 +609,7 @@
       &__text {
           font-family: 'Roboto', sans-serif;
           font-size: 24px;
-          line-height: 36px;
+          line-height: 1.5;
           font-weight: 300;
           font-style: italic;
           color: #999999;
@@ -640,13 +639,19 @@
       &__inner {
           display: flex;
           justify-content: space-between;
+          flex-wrap: wrap;
+      }
+      &__item {
+          text-align: center;
+          vertical-align: middle;
       }
   }
   
   .works {
       display: flex;
+      flex-wrap: wrap;
       &__item {
-          flex: 1;
+          width: 25%;
           display: flex;
           flex-direction: column;
       }
